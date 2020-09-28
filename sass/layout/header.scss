@@ -1,0 +1,82 @@
+header {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to top,
+      rgba($color-black, 1) 25%,
+      rgba($color-black, 0.4) 100%
+    ),
+    url(../Images/mars.png);
+  background-position: center;
+  background-size: cover;
+  .heading {
+    margin-top: 12rem;
+    width: 45%;
+    &__principal {
+      color: $color-white;
+      font-size: 6rem;
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
+      text-transform: capitalize;
+    }
+    &__sponsors {
+      font-size: 1.8rem;
+      font-weight: 400;
+      font-family: "poppins", sans-serif;
+      color: $color-white;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+      margin: 0.5rem 0.4rem;
+    }
+  }
+}
+.section {
+  padding: 0 10rem;
+}
+
+.call-to-action {
+  margin-top: 1rem;
+}
+
+.astronaut {
+  position: absolute;
+  top: 5rem;
+  right: -45rem;
+  animation: floating 2s linear infinite alternate;
+  img {
+    width: 80%;
+    height: 100%;
+    box-shadow: rgba($color-black, 0.4);
+  }
+}
+.sponsors {
+  &__heading {
+    &--main {
+      color: $color-white;
+      font-size: 4.8rem;
+      text-transform: uppercase;
+      opacity: 0.03;
+      font-family: $font-montsserat;
+      font-weight: 900;
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--hidden {
+      color: $color-white;
+      position: absolute;
+      font-family: $font-poppins;
+      font-size: 1.8rem;
+      letter-spacing: 1rem;
+      left: 50%;
+      bottom: 14%;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+    }
+  }
+  &__logos {
+    display: flex;
+  }
+}

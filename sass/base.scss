@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+
+//color variables
+$color-white: #ffff;
+$color-black: #000000;
+$color-orange: #ffbb00;
+//fonts variables
+$font-poppins: "Poppins", sans-serif;
+$font-montsserat: "Montsserat", sans-serif;
+
+*,
+*:before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+}
